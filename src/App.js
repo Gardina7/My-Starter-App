@@ -8,6 +8,7 @@ import Clock from './Component/Clock/Clock';
 import Contact from'./Component/Contact/Contact';
 import Navigation from './Component/Navigation/Navigation';
 import NotFound from './Component/NotFound/NotFound';
+import Jeopardy from './Component/Jeopardy/Jeopardy';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       render={(props) => <Welcome {...props} name='Elizabeth' />} />
       <Route path="/clock"component={Clock }/>
       <Route path="/contact"component={Contact }/>
-      <Route path="/welcome/:name" component={Welcome} />
+      <Route path="/welcome/:name" component={Welcome } />
+      <Route path="/jeopardy"component={Jeopardy }/>
       <Route component ={NotFound} />
      </Switch>
     </div>

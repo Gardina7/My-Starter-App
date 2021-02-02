@@ -8,7 +8,7 @@ let name = props.match.params.name || props.name;
 return(
     
     <div className ="Welcome">
-        Welcome, {props.name}!
+        Welcome, {name}!
     </div>
 );
 
